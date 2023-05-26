@@ -1,0 +1,260 @@
+body{
+    background-image: url(../imagen/lineas.png);
+    background-color: #19231B;
+    color: #E6FDC7;
+    margin-top: 48px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 150px;
+
+}
+main{
+    gap: 64px
+}
+
+#logonavbar{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.icono{
+    width: 24px;
+    height: 24px;
+}
+.iconohover{
+    width: 24px;
+    height: 24px;
+}
+.button{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    box-sizing: border-box;
+    border: 1px solid #E6FDC7;
+    border-radius: 50px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    color: #E6FDC7;
+    font-size: 16px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #E6FDC7;
+    color: #19231B;
+    display: flex;
+    flex-direction: row-reverse;  
+}
+.button .iconohover{
+    display: none;
+}
+.button:hover .iconohover{
+    display:block
+}
+.button:hover .icono{
+    display: none;
+}
+.button .icono{
+    display:block
+}
+.icono:hover{
+    color:#19231B
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+h1{
+    font-family: 'Questrial', sans-serif;
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165px;
+    text-align: center;
+    letter-spacing: -0.055em;
+}
+h5{
+   font-style: normal; 
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 20;
+   font-size: 18px;
+   line-height: 19px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   width: 335px;
+}
+#logocentro{
+    size: 200px;
+}
+#description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px;
+    gap: 173px;
+}
+h2{
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 99px;
+    align-self: stretch;
+    height: 99px;
+    margin-bottom: 32px;
+}
+.card{
+    width: 405px;
+    height: 470px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+.card:hover{
+    width: 405px;
+    height: 470px;
+    left: 15px;
+    top: 553px;
+    background-color: #E6FDC7;
+    cursor: pointer;
+
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#selectedwork{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+h4{
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 121.5%;
+}
+
+
+#palabrasclave{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagen/img_0247.jpg);
+    background-size: cover;
+    height: 665px;
+    margin-bottom: 8px;
+    gap: 16px
+}
+
+#palabrasclave:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(../imagen/img_0260.jpg);
+    background-size: cover;
+    height: 665px;
+    margin-bottom: 8px;
+    gap: 16px;  
+}
+#fotoytexto{
+    gap: 100px;
+}
+#texto{
+    gap:40px   
+}
+p{
+    font-size: 22px;
+    font-family: "Montserrat";
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    font-weight: 50;
+}
+#scroll{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#scrollbutton{
+    width: 60px;
+    height: 60px;  
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+   #description{
+    flex-direction: column;
+    gap: 64px;
+   }
+   h1{
+    font-size: 100px;
+    line-height: 80%;
+   }
+   h5{
+    font-size: 14px;
+   }
+   #logocentro{
+    width: 120px;
+    height: 120px;
+   }
+   h2{
+    font-size: 32px;
+   }
+   h4{
+    font-size: 20px;
+   }
+   #palabrasclave{
+    flex-direction: column;
+    gap: 8px;
+    background-size: cover;
+    background-position: center;
+   }
+   #palabrasclave:hover{
+    flex-direction: column;
+    gap: 8px;
+   }
+   p{
+    font-size: 16px;
+   }
+}
+
+@media only screen and (max-width: 1200px){
+    #palabrasclave{
+        flex-direction: column;
+}
+body{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+#cards{
+    gap: 32px;
+    justify-content: center;
+}
+}
